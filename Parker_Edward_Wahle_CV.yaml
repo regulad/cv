@@ -6,8 +6,8 @@ cv:
   phone: +1-917-363-2016
   website: https://regulad.xyz
   social_networks:
-    # - network: LinkedIn
-    # username: parker-wahle
+    - network: LinkedIn
+      username: parker-wahle
     - network: GitHub
       username: regulad
   sections:
@@ -23,7 +23,6 @@ cv:
         summary:
         highlights:
           - "GPA: 3.54"
-          - "58 credits thus far (2 semesters)"
       - institution: Livingston High School
         area: ""
         degree: ""
@@ -40,13 +39,12 @@ cv:
         position: Broadcast Crew
         date:
         start_date: 2025-08
-        end_date: present
+        end_date: 2026-01
         location: Raleigh, NC
         summary:
         highlights:
           - Responsible for performing various broadcast tasks such as gaffing, camera operation, direction, and production.
-          - Synergizes with broadcast crew and provides leadership to create a productive and energetic setting for broadcasting a production.
-          - Exercises creative talent in a high pressure, task-oriented setting.
+          - Exercised creative talent in a high pressure, task-oriented setting.
     projects:
       - name: "[Doppelganger Android-in-Cloud](https://doppelgangerhq.com)"
         date:
@@ -65,11 +63,11 @@ cv:
       - label: Mathematics
         details: Proficient in Calculus I (5/5 on AP Calculus AB exam) & Calculus II; Calculus 3 in progress
       - label: Sciences
-        details: "Received a 5/5 on the AP Physics I & II exams; Received [NOCTI job-ready credential](https://nocti.org/wp-content/uploads/Blueprints/JRBiotech4075.pdf) for work in a Biotechology laboratory."
+        details: "Received a 5/5 on the AP Physics I & II exams; Received Biotechnology [NOCTI job-ready credential](https://nocti.org/wp-content/uploads/Blueprints/JRBiotech4075.pdf)."
       - label: Software
         details: In addition to tooling required for software development and embedded development, adept in the use of Adobe Premiere Pro, Autodesk Fusion360, and GIMP.
-      # - label: Languages
-      #   details: "English (fluent, TOEFL: 118/120), # Turkish (native)"
+      - label: System Administration
+        details: "Adept in the configuration, deployment, and troubleshooting of Ceph, Proxmox, RHEL, Debian, & more."
     # publications:
     #   - title: 3D Finite Element Analysis of No-Insulation Coils
     #     authors:
@@ -250,6 +248,6 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: "2026-01-21"
+  date: "2026-04-09"
   bold_keywords: []
   sort_entries: none

@@ -1,2 +1,0 @@
-# note rendercv does *not* respect semver! use version 2.3. this is pinned in my chezmoi dotfiles
-WATCH_CMD="rendercv render --quiet --watch Parker_Edward_Wahle_CV.yaml"
