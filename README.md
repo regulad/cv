@@ -1,2 +1,0 @@
-RenderCV is hot garbage.
-

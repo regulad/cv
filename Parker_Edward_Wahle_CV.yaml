@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.2/schema.json
 cv:
   name: Parker Edward Wahle
   location: "Raleigh, NC / Newark, NJ"
@@ -131,7 +131,6 @@ design:
     name_font_family: Source Sans 3
     name_font_size: 30pt
     name_bold: true
-    small_caps_for_name: false
     photo_width: 3.5cm
     vertical_space_between_name_and_connections: 0.7cm
     vertical_space_between_connections_and_first_section: 0.7cm
@@ -139,11 +138,17 @@ design:
     connections_font_family: Source Sans 3
     separator_between_connections: ""
     use_icons_for_connections: true
-    use_urls_as_placeholders_for_connections: false
-    make_connections_links: true
     alignment: center
   section_titles:
-    type: with-partial-line
+    # NOTE: "parial" is not a typo on our part -- it is rendercv 2.2's typo,
+    #       and the enum member is genuinely spelled that way (the field's
+    #       schema title is still "Line Type", from an even earlier rename).
+    #       2.3 corrected it to "with-partial-line". We are pinned to 2.2
+    #       because it is the last release that did not change the input
+    #       schema: 2.0 -> 2.1 -> 2.2 are purely additive, whereas 2.3 dropped
+    #       design.section_titles.line_type. Bumping the pin means changing
+    #       this value back.
+    type: with-parial-line
     font_family: Source Sans 3
     font_size: 1.4em
     bold: true
@@ -162,7 +167,6 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    nested_bullet: "-"
     top_margin: 0.25cm
     left_margin: 0.4cm
     vertical_space_between_highlights: 0.25cm
@@ -250,4 +254,3 @@ locale:
 rendercv_settings:
   date: "2026-04-09"
   bold_keywords: []
-  sort_entries: none
