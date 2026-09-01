@@ -1,10 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.2/schema.json
 cv:
   name: Parker Edward Wahle
-  location: "Raleigh, NC / Newark, NJ"
+  location: "Raleigh, NC"
   email: pw@regulad.xyz
   phone: +1-917-363-2016
-  website: https://regulad.xyz
   social_networks:
     - network: LinkedIn
       username: parker-wahle
@@ -13,27 +12,14 @@ cv:
   sections:
     education:
       - institution: North Carolina State University
-        area: "Electrical Engineering / Computer Engineering"
+        area: "Dual Major; Electrical & Computer Engineering"
         degree: BS
         grade:
         date:
         start_date: 2025-08
         end_date: present
         location: "Raleigh, NC"
-        summary:
-        highlights:
-          - "GPA: 3.54"
-      - institution: Livingston High School
-        area: ""
-        degree: ""
-        grade:
-        date:
-        start_date: "2021"
-        end_date: "2025"
-        location: "Livingston, NJ"
-        summary:
-        highlights:
-          - "Awards: High Honor Roll, Science National Honor Society"
+        summary: "Expected Graduation May 2029"
     experience:
       - company: North Carolina State University Office of Information Technology
         position: Broadcast Crew
@@ -43,31 +29,49 @@ cv:
         location: Raleigh, NC
         summary:
         highlights:
-          - Responsible for performing various broadcast tasks such as gaffing, camera operation, direction, and production.
-          - Exercised creative talent in a high pressure, task-oriented setting.
+          - "Responsible for performing various broadcast tasks such as uplink network construction, gaffing, camera operation, direction, and production."
+      - company: "Local Small Business Managed Service Provider"
+        position: "Sole Proprietor"
+        location: "Essex County, NJ"
+        highlights:
+          - "Provided network buildout and architecture services to small businesses in my community."
+          - "Restored an optometrist's office's connectivity by methodically diagnosing and addressing  issues in the consoles of edge equipment."
     projects:
+      - name: "Distributed Infrastructure Lab"
+        start_date: "2021-04"
+        end_date: "present"
+        summary: "Home hyperconverged PVE/Ceph cluster"
+        highlights:
+          - "Configured Cisco, Arista, and Netgate network appliances to customize per-VLAN behavior, firewall policy, and WireGuard tunnels between remote networks."
+          - "Optimized storage performance and cost per gigabyte by selecting appropriate replication policy, BlueStore configuration, and backing storage technology for different tasks."
+      - name: "[SupIR Android Remote](https://github.com/regulad/SupIR) (74 stars on GitHub)"
+        start_date: "2024-09"
+        end_date: "2024-11"
+        summary: "Software-defined infrared remote for Android"
+        highlights:
+          - "Wrote a Kotlin application driving Android's IR transmitter, decoding the irdb protocol database into pulse patterns."
+      - name: "[CloseCircuit](https://github.com/regulad/closecircuit)"
+        start_date: "2024-10"
+        end_date: "2025-01"
+        summary: "Low-budget 3D-printable backup camera for vehicles using repurposed Android devices"
+        highlights:
+          - "Implemented a WS-Discovery (WSDD) client from scratch in Kotlin to enumerate cameras via multicast, managed multicast locks, per-process network binding to keep traffic on the P2P interface, and Android wake/doze exemptions required for use as a heads-up display."
+          #- "Designed and 3D-printed the vehicle license-plate camera mount; published the STEP and STL sources alongside the application."
       - name: "[Doppelganger Android-in-Cloud](https://doppelgangerhq.com)"
         date:
-        start_date: 2024-07
-        end_date: present
+        start_date: "2024-07"
+        end_date: "2024-08"
         location:
-        summary: Remote Android devices for social media marketing teams
+        summary: "Containerized Android devices for sharing between colleages"
         highlights:
-          - Self-developed a multi-modal web application that fills an uncaptured niche.
-          - Used project prototyping and developing time as a learning opportunity; self-taught Next.js, WebSocket semantics, application instrumentation, OCI application containerization for security and deployment, CI/CD workflows, and hoisting bespoke application hosting runtimes on Oracle Cloud.
-          - Performed market research and technical research to identify the optimal technologies in the implementation of real-time web applications.
-          - Contributed to the open-source community with Android-in-cloud tooling.
+          - "Built a multi-tenant web platform provisioning containerized Android instances over WebSocket-backed remote sessions; deployed on Oracle Cloud with CI/CD and custom hosting runtimes."
     skills:
       - label: Programming
-        details: Fluent in Python, JavaScript/TypeScript, Kotlin, Java, and Git; experience in Next.js Frontend & Android app development
-      - label: Mathematics
-        details: Proficient in Calculus I (5/5 on AP Calculus AB exam) & Calculus II; Calculus 3 in progress
-      - label: Sciences
-        details: "Received a 5/5 on the AP Physics I & II exams; Received Biotechnology [NOCTI job-ready credential](https://nocti.org/wp-content/uploads/Blueprints/JRBiotech4075.pdf)."
-      - label: Software
-        details: In addition to tooling required for software development and embedded development, adept in the use of Adobe Premiere Pro, Autodesk Fusion360, and GIMP.
-      - label: System Administration
-        details: "Adept in the configuration, deployment, and troubleshooting of Ceph, Proxmox, RHEL, Debian, & more."
+        details: "Experienced in software architecture; fluent in Python, JavaScript/TypeScript, Kotlin, Java, and C."
+      - label: "Software Reverse Engineering"
+        details: "Performed static analysis in Ghidra on binaries built for PowerPC game consoles, ARMv7a Android bootloaders, and production iOS Objective-C applications."
+      - label: "Release Engineering"
+        details: "Distributed authored applications via self-hosted apt, winget, brew and scoop repositories."
     # publications:
     #   - title: 3D Finite Element Analysis of No-Insulation Coils
     #     authors:
@@ -79,17 +83,20 @@ cv:
     #     journal:
     #     date: 2004-01
     extracurricular_activities:
-      - name: "First Tech Challenge (FTC) High-School Travel Robotics"
-        date:
-        start_date: 2023-10
-        end_date: 2024-04
-        location:
-        summary: Head of Programming, Head of Electrical, and Member of Design Crew
+      - name: "North Carolina State Linux User's Group"
+        start_date: "2025-12"
+        end_date: "present"
         highlights:
-          - Empowered, educated, and collaborated with team members to create an environment conclusive for innovative approaches to both constrained and dynamic engineering problems.
-          - Utilized OpenCV to create an image-processing pipeline for an autonomously-operating robot.
-          - Empowered Android-based embedded hardware with additional capabilities by leveraging the Android SDK.
-          - Designed & fabricated mechanical parts using Autodesk Fusion360, SLA 3D printing, FDM 3D printing, and sheet metal processes.
+          - "Delivered keynote presentations to student body on computer networking, monkey-patching machine code, and other CPE/CS topics."
+      #- name: "First Tech Challenge Travel Robotics"
+      #  date:
+      #  start_date: 2023-10
+      #  end_date: 2024-04
+      #  location:
+      #  summary: Head of Programming, Head of Electrical, and Member of Design Crew
+      #  highlights:
+          #- Utilized OpenCV on an embedded platform to create an image-processing pipeline for an autonomously-operating robot designed to complete a fixed task.
+          #- Designed & fabricated mechanical parts using Autodesk Fusion360, SLA 3D printing, FDM 3D printing, and sheet metal processes.
       # - bullet: "There are 7 unique entry types in RenderCV: *BulletEntry*, *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*, *PublicationEntry*, and *OneLineEntry*." # TODO
       # - bullet: "Each entry type has a different structure and layout. This document demonstrates all of them." # TODO
     # numbered_entries:
@@ -217,7 +224,7 @@ locale:
   language: en
   phone_number_format: national
   page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
+  last_updated_date_template: Updated in TODAY
   date_template: MONTH_ABBREVIATION YEAR
   month: month
   months: months
@@ -252,5 +259,5 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: "2026-04-09"
+  date: "2026-09-01"
   bold_keywords: []
