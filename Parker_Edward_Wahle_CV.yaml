@@ -1,42 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.2/schema.json
 cv:
-  name: Parker Edward Wahle
+  name: "Parker Edward Wahle"
   location: "Raleigh, NC"
-  email: pw@regulad.xyz
-  phone: +1-917-363-2016
+  email: "pw@regulad.xyz"
+  phone: "+1-917-363-2016"
   social_networks:
-    - network: LinkedIn
-      username: parker-wahle
-    - network: GitHub
-      username: regulad
+    - network: "LinkedIn"
+      username: "parker-wahle"
+    - network: "GitHub"
+      username: "regulad"
   sections:
     education:
-      - institution: North Carolina State University
+      - institution: "North Carolina State University"
         area: "Dual Major; Electrical & Computer Engineering"
-        degree: BS
-        grade:
+        degree: "BS"
+        grade: "3.4/4.0"
         date:
-        start_date: 2025-08
-        end_date: present
+        start_date: "2025-08"
+        end_date: "2029-05"
         location: "Raleigh, NC"
-        summary: "Expected Graduation May 2029"
-    experience:
-      - company: North Carolina State University Office of Information Technology
-        position: Broadcast Crew
-        date:
-        start_date: 2025-08
-        end_date: 2026-01
-        location: Raleigh, NC
-        summary:
-        highlights:
-          - "Responsible for performing various broadcast tasks such as uplink network construction, gaffing, camera operation, direction, and production."
-      - company: "Local Small Business Managed Service Provider"
-        position: "Sole Proprietor"
-        location: "Essex County, NJ"
-        highlights:
-          - "Provided network buildout and architecture services to small businesses in my community."
-          - "Restored an optometrist's office's connectivity by methodically diagnosing and addressing  issues in the consoles of edge equipment."
-    projects:
+        summary: "GPA 3.4"
+    selected_projects:
       - name: "Distributed Infrastructure Lab"
         start_date: "2021-04"
         end_date: "present"
@@ -55,23 +39,41 @@ cv:
         end_date: "2025-01"
         summary: "Low-budget 3D-printable backup camera for vehicles using repurposed Android devices"
         highlights:
-          - "Implemented a WS-Discovery (WSDD) client from scratch in Kotlin to enumerate cameras via multicast, managed multicast locks, per-process network binding to keep traffic on the P2P interface, and Android wake/doze exemptions required for use as a heads-up display."
-          #- "Designed and 3D-printed the vehicle license-plate camera mount; published the STEP and STL sources alongside the application."
+          - "Implemented a WS-Discovery (WSDD) client from scratch in Kotlin to enumerate ONVIF cameras over multicast."
+          - "Pinned traffic to the Wi‑Fi Direct interface via per-process network binding and multicast locks, and obtained wake/doze exemptions so the device runs as an always-on heads-up display."
+          - "Designed and 3D-printed a vehicle license-plate camera mount; published the STEP sources with the application."
       - name: "[Doppelganger Android-in-Cloud](https://doppelgangerhq.com)"
         date:
         start_date: "2024-07"
         end_date: "2024-08"
         location:
-        summary: "Containerized Android devices for sharing between colleages"
+        summary: "Web-based containerized Android devices"
         highlights:
-          - "Built a multi-tenant web platform provisioning containerized Android instances over WebSocket-backed remote sessions; deployed on Oracle Cloud with CI/CD and custom hosting runtimes."
+          - "Built a multi-tenant web platform provisioning containerized Android instances over WebSocket-backed remote sessions; deployed on Oracle Cloud with CI/CD."
+    experience:
+      - company: "NC State OIT"
+        position: "Broadcast Crew"
+        start_date: "2025-08"
+        end_date: "2026-01"
+        summary:
+        highlights:
+          - "Deployed and managed UniFi networks for live athletics broadcasts, including cross-site 60 GHz point-to-point links, and configured SRT contribution encoders to traverse NAT reliably."
+      - company: "Independent Managed IT Services"
+        position: "Sole Proprietor"
+        #location: "Livingston, NJ"
+        start_date: "2024-05"
+        highlights:
+          - "Designed and built networks for small businesses in Essex County, New Jersey: structured cabling, VLAN segmentation, firewall policy, Wi‑Fi, and remote-access VPN."
+          - "Traced a site-to-site VPN outage at an optometry practice to an ISP static-IP reprovisioning that had reassigned endpoint addresses; reconfigured and restored connectivity."
     skills:
-      - label: Programming
-        details: "Experienced in software architecture; fluent in Python, JavaScript/TypeScript, Kotlin, Java, and C."
+      - label: "Programming"
+        details: "Python, JavaScript/TypeScript, Kotlin, Java, and C."
       - label: "Software Reverse Engineering"
         details: "Performed static analysis in Ghidra on binaries built for PowerPC game consoles, ARMv7a Android bootloaders, and production iOS Objective-C applications."
       - label: "Release Engineering"
         details: "Distributed authored applications via self-hosted apt, winget, brew and scoop repositories."
+      - label: "Amateur Radio"
+        details: "FCC Technician, KE2HSA; member of NC State STARS"
     # publications:
     #   - title: 3D Finite Element Analysis of No-Insulation Coils
     #     authors:
@@ -87,7 +89,7 @@ cv:
         start_date: "2025-12"
         end_date: "present"
         highlights:
-          - "Delivered keynote presentations to student body on computer networking, monkey-patching machine code, and other CPE/CS topics."
+          - "Gave presentations to student body on computer networking, live-patching machine code, and other CPE/CS topics."
       #- name: "First Tech Challenge Travel Robotics"
       #  date:
       #  start_date: 2023-10
@@ -95,8 +97,8 @@ cv:
       #  location:
       #  summary: Head of Programming, Head of Electrical, and Member of Design Crew
       #  highlights:
-          #- Utilized OpenCV on an embedded platform to create an image-processing pipeline for an autonomously-operating robot designed to complete a fixed task.
-          #- Designed & fabricated mechanical parts using Autodesk Fusion360, SLA 3D printing, FDM 3D printing, and sheet metal processes.
+      #- Utilized OpenCV on an embedded platform to create an image-processing pipeline for an autonomously-operating robot designed to complete a fixed task.
+      #- Designed & fabricated mechanical parts using Autodesk Fusion360, SLA 3D printing, FDM 3D printing, and sheet metal processes.
       # - bullet: "There are 7 unique entry types in RenderCV: *BulletEntry*, *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*, *PublicationEntry*, and *OneLineEntry*." # TODO
       # - bullet: "Each entry type has a different structure and layout. This document demonstrates all of them." # TODO
     # numbered_entries:
@@ -112,12 +114,12 @@ design:
   theme: classic
   page:
     size: us-letter
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
+    top_margin: 1.8cm
+    bottom_margin: 1.8cm
+    left_margin: 1.7cm
+    right_margin: 1.7cm
     show_page_numbering: false
-    show_last_updated_date: true
+    show_last_updated_date: false
   colors:
     text: rgb(0, 0, 0)
     name: rgb(0, 79, 144)
@@ -127,7 +129,7 @@ design:
     last_updated_date_and_page_numbering: rgb(128, 128, 128)
   text:
     font_family: Source Sans 3
-    font_size: 10pt
+    font_size: 9.5pt
     leading: 0.6em
     alignment: justified
     date_and_location_column_alignment: right
@@ -238,10 +240,10 @@ locale:
     - Mar
     - Apr
     - May
-    - June
-    - July
+    - Jun
+    - Jul
     - Aug
-    - Sept
+    - Sep
     - Oct
     - Nov
     - Dec
