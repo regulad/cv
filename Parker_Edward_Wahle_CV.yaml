@@ -27,11 +27,11 @@ cv:
         summary: "Home hyperconverged PVE/Ceph cluster"
         highlights:
           - "Configured Cisco, Arista, and Netgate network appliances to customize per-VLAN behavior, firewall policy, and WireGuard tunnels between remote networks."
-          - "Optimized storage performance and cost per gigabyte by selecting appropriate replication policy, BlueStore configuration, and backing storage technology for different tasks."
-      - name: "[SupIR Android Remote](https://github.com/regulad/SupIR) (74 stars on GitHub)"
+          - "Optimized storage performance and cost per gigabyte by selecting appropriate replication policy, BlueStore configuration, and backing storage technology for different tasks; used Proxmox HA with Ceph to **establish 3-way-redundancy**."
+      - name: "[SupIR Android Remote](https://github.com/regulad/SupIR)"
         start_date: "2024-09"
         end_date: "2024-11"
-        summary: "Software-defined infrared remote for Android"
+        summary: "Software-defined infrared remote for Android **(75 stars on GitHub)**"
         highlights:
           - "Wrote a Kotlin application driving Android's IR transmitter, decoding the irdb protocol database into pulse patterns."
       - name: "[CloseCircuit](https://github.com/regulad/closecircuit)"
@@ -40,7 +40,7 @@ cv:
         summary: "Low-budget 3D-printable backup camera for vehicles using repurposed Android devices"
         highlights:
           - "Implemented a WS-Discovery (WSDD) client from scratch in Kotlin to enumerate ONVIF cameras over multicast."
-          - "Pinned traffic to the Wi‑Fi Direct interface via per-process network binding and multicast locks, and obtained wake/doze exemptions so the device runs as an always-on heads-up display."
+          - "Pinned traffic to the Wi‑Fi Direct interface via per-process network binding and multicast locks, and obtained wake/doze exemptions so the **device runs as an always-on heads-up display**."
           - "Designed and 3D-printed a vehicle license-plate camera mount; published the STEP sources with the application."
       - name: "[Doppelganger Android-in-Cloud](https://doppelgangerhq.com)"
         date:
@@ -49,7 +49,7 @@ cv:
         location:
         summary: "Web-based containerized Android devices"
         highlights:
-          - "Built a multi-tenant web platform provisioning containerized Android instances over WebSocket-backed remote sessions; deployed on Oracle Cloud with CI/CD."
+          - "Built a multi-tenant web platform provisioning containerized Android instances over WebSocket-backed remote sessions; **deployed on Oracle Cloud with CI/CD**."
     experience:
       - company: "NC State OIT"
         position: "Broadcast Crew"
@@ -57,14 +57,14 @@ cv:
         end_date: "2026-01"
         summary:
         highlights:
-          - "Deployed and managed UniFi networks for live athletics broadcasts, including cross-site 60 GHz point-to-point links, and configured SRT contribution encoders to traverse NAT reliably."
+          - "Deployed and managed UniFi networks for live athletics broadcasts, including cross-site 60 GHz point-to-point links, and configured SRT contribution encoders to **traverse NAT reliably**."
       - company: "Independent Managed IT Services"
         position: "Sole Proprietor"
         #location: "Livingston, NJ"
         start_date: "2024-05"
         highlights:
           - "Designed and built networks for small businesses in Essex County, New Jersey: structured cabling, VLAN segmentation, firewall policy, Wi‑Fi, and remote-access VPN."
-          - "Traced a site-to-site VPN outage at an optometry practice to an ISP static-IP reprovisioning that had reassigned endpoint addresses; reconfigured and restored connectivity."
+          - "Traced a site-to-site VPN outage at an optometry practice to an ISP static-IP reprovisioning that had reassigned endpoint addresses; reconfigured and **restored connectivity**."
     skills:
       - label: "Programming"
         details: "Python, JavaScript/TypeScript, Kotlin, Java, and C."
@@ -89,7 +89,7 @@ cv:
         start_date: "2025-12"
         end_date: "present"
         highlights:
-          - "Gave presentations to student body on computer networking, live-patching machine code, and other CPE/CS topics."
+          - "**Gave presentations** to student body on computer networking, creating an iOS jailbreak, and other CPE/CS topics."
       #- name: "First Tech Challenge Travel Robotics"
       #  date:
       #  start_date: 2023-10
